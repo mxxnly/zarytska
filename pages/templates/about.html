@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'about.css' %}">
+    {% endblock %}
+    {% block content %}
+    <section class="section">
+        <h2>Зарицька Христина</h2>
+        <img src="{% static 'images/profile.jpg' %}" alt="Моє фото" class="profile-photo">
+        <p>студент ЕКН-41, Львівський національний університет імені Івана Франка</p>
+        <div class="skills">
+            <div class="skill"> 
+                <img src="{% static 'images/analitika.png' %}" alt="Моє фото" class="skills-photo">
+                Аналітика
+            </div>
+            <div class="skill">
+                <img src="{% static 'images/aaaaa.png' %}" alt="Моє фото" class="skills-photo">
+                Креативність
+            </div>
+            <div class="skill">
+                <img src="{% static 'images/ccccc.png' %}" alt="Моє фото" class="skills-photo">
+                Комунікація
+            </div>
+        </div>
+    </section> 
+{% endblock %}

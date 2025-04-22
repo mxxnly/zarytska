@@ -1,0 +1,29 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'exp.css' %}">
+    {% endblock %}
+{% block content %}
+<section class="experience-section">
+    <h2>Мій досвід</h2>
+    <div class="experience-list">
+        <div class="experience-item">
+            <h3>Продавець мармеладок</h3>
+            <p class="company"></p>
+            <p class="period">Червень 2022 — Серпень 2022</p>
+        </div>
+        <div class="experience-item">
+            <h3>Няня</h3>
+            <p class="company">Приватний садок</p>
+            <p class="period">Червень 2023 — Серпень 2023</p>
+        </div>
+        <div class="experience-item">
+            <h3>Ревізор</h3>
+            <p class="company">Dionis</p>
+            <p class="period">Липень 2024 - Дотепер</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
